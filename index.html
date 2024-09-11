@@ -4,6 +4,11 @@
   </head>
   <body>
     <py-script>
+        # Import the script
+        import js
+        js.import_code('identification.py')
+        
+        # Call the function from the script
         from identification import inquire
         inquire()
     </py-script>
