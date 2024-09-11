@@ -113,7 +113,10 @@
             for key, value in vars(identifier).items():
                 print(f"{key}: {value}")
         
-        inquire()
+        try:
+            inquire()
+        except Exception as e:
+            print(repr(e))
     </py-script>
   </body>
 </html>
