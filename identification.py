@@ -104,6 +104,7 @@ def inquire():
         identifier = ID(id=input_string)
     else:
         identifier = ID(cusip=input_string) # doesnt matter whether you set it to cusip, sedol, or isin
+    print(f"YOU INPUTTED: {input_string}")
     for key, value in vars(identifier).items():
         print(f"{key}: {value}")
 
