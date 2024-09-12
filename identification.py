@@ -112,4 +112,7 @@ def inquire():
 
 ###############################################################
 if __name__ == "__main__":
-    inquire()
+    try: 
+        inquire()
+    except:
+        print("Misinput error, please reload page")
